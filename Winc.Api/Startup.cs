@@ -46,11 +46,8 @@ namespace Winc.Api
             }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
@@ -59,8 +56,6 @@ namespace Winc.Api
 
             ConfigureSwaggerUi(app);
         }
-
-
 
 
         protected virtual void ConfigureSwagger(IServiceCollection services)
