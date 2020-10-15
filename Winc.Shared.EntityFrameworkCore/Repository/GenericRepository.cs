@@ -64,11 +64,6 @@ namespace Winc.Shared.EntityFrameworkCore.Repository
         }
 
 
-        //public async Task<TEntity> GetAsync<TEntity>(Expression<Func<TEntity, bool>> predicate,
-        //                                   bool tracking = false) where TEntity : BaseEntity
-        //{
-        //    return await Query<TEntity>(predicate, tracking).SingleOrDefaultAsync();
-        //}
 
         public async Task<TEntity> GetAsync<TEntity>(Expression<Func<TEntity, bool>> predicate,
                                     Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
@@ -152,11 +147,6 @@ namespace Winc.Shared.EntityFrameworkCore.Repository
                 return await Task.FromResult(false);
             }
         }
-
-        //public void Delete<TEntity>(TEntity entity) where TEntity : BaseEntity
-        //{             
-        //    _context.Remove<TEntity>(entity);
-        //}
 
         public async Task SaveChangesAsync()
         {

@@ -1,6 +1,5 @@
 E:\GitHub-Deepakbhalla27\Winc\Winc.Shared.EntityFrameworkCore\bin\Debug\netstandard2.0\Winc.Shared.EntityFrameworkCore.deps.json
 E:\GitHub-Deepakbhalla27\Winc\Winc.Shared.EntityFrameworkCore\bin\Debug\netstandard2.0\Winc.Shared.EntityFrameworkCore.dll
-E:\GitHub-Deepakbhalla27\Winc\Winc.Shared.EntityFrameworkCore\obj\Debug\netstandard2.0\Winc.Shared.EntityFrameworkCore.csprojAssemblyReference.cache
 E:\GitHub-Deepakbhalla27\Winc\Winc.Shared.EntityFrameworkCore\obj\Debug\netstandard2.0\Winc.Shared.EntityFrameworkCore.AssemblyInfoInputs.cache
 E:\GitHub-Deepakbhalla27\Winc\Winc.Shared.EntityFrameworkCore\obj\Debug\netstandard2.0\Winc.Shared.EntityFrameworkCore.AssemblyInfo.cs
 E:\GitHub-Deepakbhalla27\Winc\Winc.Shared.EntityFrameworkCore\bin\Debug\netstandard2.0\Winc.Shared.EntityFrameworkCore.pdb

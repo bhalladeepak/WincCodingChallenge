@@ -12,18 +12,19 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Autofac;
-using Winc.Api.Helpers;
+using Autofac.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
 using Winc.Library.DbConfigurations;
+using Winc.Library.Repository;
+using Winc.Library.Services;
 
 namespace Winc.Api
 {
     public class Startup
     {
-        protected string _dllPrefix;
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            _dllPrefix = "Winc";
         }
 
         public IConfiguration Configuration { get; }
@@ -32,9 +33,7 @@ namespace Winc.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-
             ConfigureSwagger(services);
-
             ConfigureDi(services);
         }
 
@@ -88,17 +87,25 @@ namespace Winc.Api
 
         }
 
-
-        protected virtual IContainer ConfigureDi(IServiceCollection services)
+        protected virtual void ConfigureDi(IServiceCollection services)
         {
             //Responsible for IhttpContext to be injected through IHttpContextAccessor interface
             services.AddHttpContextAccessor();
-
             services.Configure<DbSettings>(Configuration.GetSection("DbSettings"));
 
-            var container = DiHelper.Configure(services, _dllPrefix, true);
+            services.AddOptions();
 
-            return container;
+            services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<IWincRepository, WincRepository>();
+
+            services.AddDbContext<WincDbContext>(options =>
+                options.UseSqlServer(Configuration["DbSettings:SQLConnection"],
+                    sqlop =>
+                    {
+                        sqlop.CommandTimeout(Convert.ToInt32(Configuration["DbSettings:QueryTimeOutInSec"] ?? "20"));
+                        sqlop.EnableRetryOnFailure(maxRetryCount: 4, maxRetryDelay: TimeSpan.FromSeconds(30),
+                            errorNumbersToAdd: null);
+                    }));
         }
     }
 }

@@ -9,16 +9,12 @@ using Winc.Library.Repository.EFConfigurations;
 
 namespace Winc.Library.Repository
 {
-    public interface IWincDbContext
-    {
 
-    }
-    public class WincDbContext : DbContext, IWincDbContext
+    public class WincDbContext : DbContext
     {
-        protected DbSettings _dbSettings;
-        public WincDbContext(IOptions<DbSettings> dbSettings)
+        public WincDbContext(DbContextOptions<WincDbContext> dbOptions) : base(dbOptions)
         {
-            _dbSettings = dbSettings.Value;
+
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

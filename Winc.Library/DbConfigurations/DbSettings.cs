@@ -7,7 +7,6 @@ namespace Winc.Library.DbConfigurations
     public class DbSettings
     {
         public string SQLConnection { get; set; }
-        public string LocationDb { get; set; }
         public int QueryTimeOutInSec { get; set; }
         public int TransactionTimeOutInSec { get; set; }
     }

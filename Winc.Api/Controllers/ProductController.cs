@@ -36,8 +36,8 @@ namespace Winc.Api.Controllers
 
 
         [HttpGet]
-        [Route("GetProductListByBrand/{brandId} ")]
-        public async Task<IEnumerable<ProductAttributeDto>> GetProductListByBrandAsync(string brandId)
+        [Route("GetProductListByBrand/{brandId}")]
+        public async Task<IEnumerable<ProductAttributeDto>> GetProductListByBrandAsync(Guid brandId)
         {
             try
             {
