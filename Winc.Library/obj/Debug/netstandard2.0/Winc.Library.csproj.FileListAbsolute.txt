@@ -1,0 +1,12 @@
+E:\GitHub-Deepakbhalla27\Winc\Winc.Library\bin\Debug\netstandard2.0\Winc.Library.deps.json
+E:\GitHub-Deepakbhalla27\Winc\Winc.Library\bin\Debug\netstandard2.0\Winc.Library.dll
+E:\GitHub-Deepakbhalla27\Winc\Winc.Library\bin\Debug\netstandard2.0\Winc.Library.pdb
+E:\GitHub-Deepakbhalla27\Winc\Winc.Library\bin\Debug\netstandard2.0\Winc.Shared.EntityFrameworkCore.dll
+E:\GitHub-Deepakbhalla27\Winc\Winc.Library\bin\Debug\netstandard2.0\Winc.Shared.EntityFrameworkCore.pdb
+E:\GitHub-Deepakbhalla27\Winc\Winc.Library\obj\Debug\netstandard2.0\Winc.Library.csprojAssemblyReference.cache
+E:\GitHub-Deepakbhalla27\Winc\Winc.Library\obj\Debug\netstandard2.0\Winc.Library.AssemblyInfoInputs.cache
+E:\GitHub-Deepakbhalla27\Winc\Winc.Library\obj\Debug\netstandard2.0\Winc.Library.AssemblyInfo.cs
+E:\GitHub-Deepakbhalla27\Winc\Winc.Library\obj\Debug\netstandard2.0\Winc.Library.csproj.CoreCompileInputs.cache
+E:\GitHub-Deepakbhalla27\Winc\Winc.Library\obj\Debug\netstandard2.0\Winc.Library.csproj.CopyComplete
+E:\GitHub-Deepakbhalla27\Winc\Winc.Library\obj\Debug\netstandard2.0\Winc.Library.dll
+E:\GitHub-Deepakbhalla27\Winc\Winc.Library\obj\Debug\netstandard2.0\Winc.Library.pdb

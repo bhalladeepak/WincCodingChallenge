@@ -1,0 +1,5 @@
+E:\GitHub-Deepakbhalla27\Winc\Winc.Service\bin\Debug\netstandard2.0\Winc.Service.deps.json
+E:\GitHub-Deepakbhalla27\Winc\Winc.Service\bin\Debug\netstandard2.0\Winc.Service.dll
+E:\GitHub-Deepakbhalla27\Winc\Winc.Service\obj\Debug\netstandard2.0\Winc.Service.csprojAssemblyReference.cache
+E:\GitHub-Deepakbhalla27\Winc\Winc.Service\obj\Debug\netstandard2.0\Winc.Service.AssemblyInfoInputs.cache
+E:\GitHub-Deepakbhalla27\Winc\Winc.Service\obj\Debug\netstandard2.0\Winc.Service.AssemblyInfo.cs
